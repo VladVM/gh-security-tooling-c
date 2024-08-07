@@ -29,6 +29,6 @@ void test2(void){
 
 void test3() {
     // copied directly from GH advisory
-    printf("%s\n", 42); // BAD: printf will treat 42 as a char*, will most likely segfault
+    printf("%s\n", "test"); // BAD: printf will treat 42 as a char*, will most likely segfault
     return;
 }
