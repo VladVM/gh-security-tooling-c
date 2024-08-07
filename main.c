@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-void test(void);
+void test1(void);
 
 void main(void **argv, int argc){
     printf("Hello world\n");
+    test1();
 }
 
 void test1(void){
