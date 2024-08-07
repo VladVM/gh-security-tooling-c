@@ -4,6 +4,7 @@
 
 void test1(void);
 void test2(void);
+void test3(void);
 
 void main(void **argv, int argc){
     printf("Hello world\n");
@@ -24,4 +25,10 @@ void test2(void){
     gets(buf);
     system(buf);
     printf("%s", buf);
+}
+
+void test3() {
+    // copied directly from GH advisory
+    printf("%s\n", "test"); // BAD: printf will treat 42 as a char*, will most likely segfault
+    return;
 }
